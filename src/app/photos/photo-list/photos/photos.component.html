@@ -3,8 +3,9 @@
 </p>
 <!-- quando quero apontar um brightness personalizado direto no html
 Não esquecendo de aplicar o @Input na diretiva -->
-<!-- <h1 style="background: red" apDarkenOnHover brightness="20%">Photos</h1><ol class="list-unstyled"> -->
-    <li *ngFor="let cols of rows" class="row no-gutters" >
+<!-- <h1 style="background: red" apDarkenOnHover brightness="20%">Photos</h1> -->
+<ol class="list-unstyled">   
+<li *ngFor="let cols of rows" class="row no-gutters" >
         <div *ngFor="let photo of cols" class="col-4" apDarkenOnHover>
            <ap-card>
             <ap-photo [url]="photo.url" [description]="photo.description">
