@@ -5,6 +5,8 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { VmessageModule } from '../shared/components/vmessage/vmessage.module';
 import { RouterModule } from '@angular/router';
+import { HomeComponent } from './home.component';
+import { HomeRoutingModule } from './home.routing.module';
 
 @NgModule({
   imports: [
@@ -12,11 +14,13 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     VmessageModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    HomeRoutingModule
   ],
   declarations: [
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomeComponent
   ]
 })
 export class HomeModule { }
