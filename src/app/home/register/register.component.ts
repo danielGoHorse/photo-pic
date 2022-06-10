@@ -9,6 +9,7 @@ import { UserNotTakenValidatorService } from './user-not-taken.validator.service
 
 @Component({
   templateUrl: './register.component.html',
+  providers: [ UserNotTakenValidatorService ]
 })
 export class RegisterComponent implements OnInit {
 
